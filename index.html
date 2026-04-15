@@ -26,15 +26,73 @@
 
                 <h1>Registration Form</h1>
                 <p>Please fill out the information below to enroll your child in Dawn Star's preschool.</p>
-            </div>
+
+            <form method="post" enctype="multipart/form-data">
+                <fieldset class="child-info">
+                    <legend>Child Information</legend>
+
+                    <div class="input-wrapper">
+                        <label for="fullname">Full Name</label>
+                        <input 
+                            id="fullname" 
+                            name="fullname"
+                            type="text" 
+                            placeholder="Your kid's name">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="birth">Birthday</label>
+                        <input 
+                            id="birth" 
+                            name="birth"
+                            type="date">
+                    </div>
+
+                    <div class="select-wrapper">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="female">Girl</option>
+                            <option value="male">Boy</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-wrapper">
+                        <label for="medical-info">Medical Informations</label>
+
+                        <textarea name="medical-info" id="medical-info" 
+                            cols="30" rows="10"
+                            placeholder="Please let us know if your child has any health conditions or special needs we should be aware of."></textarea>
+                    </div>
+
+                    <div class="droparea-wrapper">
+                        <input 
+                            type="file" 
+                            name="birth-file" 
+                            id="birth-file">
+
+                        <img src="assets/icons/cloud-upload.svg" alt="outline icon of a cloud with an arrow inside pointing up">
+
+                        <p>
+                            Click here to <br> 
+                            select files.
+                        </p>
+                    </div>
+
+
+                </fieldset>
+            </form>
+
         </main>
 
         <aside>
             <div class="aside-container">
                 <header>
+
                     <img src="assets/Logo.svg" alt="Dawn Star's logo">
+
                     <h2>Why each <span>learning</span> moment counts</h2>
                     <p>Enroll your child in our school and watch him bloom in a safe, stimulating and nurturing environment.</p>
+                    
                 </header>
 
                 <img src="assets/Illustration.png" alt="Teacher showing children students a drawing of a star">
