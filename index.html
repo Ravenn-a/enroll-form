@@ -151,6 +151,43 @@
 
                 </fieldset>
 
+                <fieldset class="guardian">
+                    <legend>Guardian Information</legend>
+
+                    <div class="input-wrapper">
+                        <label for="guardian">Guardian's Name</label>
+                        <input 
+                            id="guardian" 
+                            name="guardian" 
+                            type="text">
+                        <small>Main guardian and emegrency contact</small>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            id="phone" 
+                            name="phone" 
+                            type="text"
+                            placeholder="+44 xxx xxx xxxx">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mail">E-mail</label>
+                        <input 
+                            id="mail" 
+                            name="mail" 
+                            type="email"
+                            placeholder="examplehere@gmail.com"
+                            required>
+                        <div class="error">
+                            <img src="assets/icons/alert-circle.svg" alt="red alert circle">
+                            <span>Insert a valid e-mail.</span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
             </form>
 
         </main>
