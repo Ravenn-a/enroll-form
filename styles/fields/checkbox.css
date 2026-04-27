@@ -34,7 +34,7 @@
         }
     }
 
-    &:checked {
+    &:has(:checked) {
         .checkbox-image {
             background-image: url(../../assets/icons/check-select.svg);
         }
